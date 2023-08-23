@@ -22,6 +22,9 @@ https://github.com/Rohanfizz/Acciojob-HTML_CSS*/
     background-size: cover;
     width: auto;
 }
+.Skills{
+    color: white;
+}
 .navbar{
     position: sticky;
     top: 0;
