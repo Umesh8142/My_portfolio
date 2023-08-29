@@ -174,7 +174,7 @@ ion-icon{
 }
 .grow:hover{
     transform: scale(1.1);
-    -webkit-transition: transform 0.5s ease-in-out;
+    --webkit-transition: transform 0.5s ease-in-out;
 }
 .connect{
     /* background-color: red; */
