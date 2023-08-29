@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Niramit:wght@200;700&family=Pacifico&family=REM:wght@300;400&family=Sofia&family=Sofia+Sans+Condensed&display=swap');
 *{    margin: 0;
-     box-sizing: border-box;
-     font-family: 'Lilita One';
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Niramit:wght@200;700&family=Pacifico&family=Poppins:ital@0;1&family=REM:wght@300;400&family=Sofia&family=Sofia+Sans+Condensed&display=swap');
 }
-
 /* https://codepen.io/alvaromontoro/pen/...
 https://fonts.google.com/specimen/Sof... 
 https://getcssscan.com/css-box-shadow...
@@ -21,6 +20,10 @@ https://github.com/Rohanfizz/Acciojob-HTML_CSS*/
     background-image: url(wallpaper.jpg);
     background-size: cover;
     width: auto;
+    
+}
+.Skills{
+    color: white;
 }
 .navbar{
     position: sticky;
@@ -70,59 +73,60 @@ ion-icon{
     transition: 0.5s ease-in-out;
     cursor: pointer;
 }
-
 .about{
-  /* background-color: red;  */
-  /* background-image: url(layered-waves-haikei.png);  */
- height: 20rem;
- display: flex;
- align-items: center;
- justify-content: center;
-}
-.about-grid{
-    height: 18rem;
-    width:30rem;
-    /* background-color: black;   */
-    min-width: 20rem;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(4,rem);
-    grid-template-rows: 10rem 4rem;
-}
-.about-img{
-    margin-top: 1rem;
-    grid-row: 1/3;
-    height: 16rem;
-    /* background-color: yellow;  */
-    margin-left: 2px;
-}
-.umesh{
-    height: 100%;
-    border-radius: 0.5rem;
-    border: 1.5px solid black;
-    box-shadow: rgba(1, 1, 1, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
-.about-name{
-    margin-left: 50px;
-    grid-column: 3/5;
-    border-radius: 0.5rem;
-    color: white;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: last baseline;
-    justify-content: left;
-}
-.about-info{
-    grid-column: 3/5;
-    margin-left: 50px;
-    /* background-color: green; */
-    color: white;
-    font-size: 1.8rem;
-    display: flex;
-    align-items: first baseline;
-    justify-content: center;
-}
-.project{
+    /* background-color: red;  */
+    /* background-image: url(layered-waves-haikei.png);  */
+   height: 20rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+    top: 50px;
+  }
+  .about-grid{
+      height: 18rem;
+      width:30rem;
+      /* background-color: black;   */
+      min-width: 20rem;
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(4,rem);
+      grid-template-rows: 10rem 4rem;
+  }
+  .about-img{
+      margin-top: 1rem;
+      grid-row: 1/3;
+      height: 16rem;
+      /* background-color: yellow;  */
+      margin-left: 2px;
+  }
+  .umesh{
+      height: 100%;
+      border-radius: 0.5rem;
+      border: 1.5px solid black;
+      box-shadow: rgba(1, 1, 1, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  .about-name{
+      margin-left: 50px;
+      grid-column: 3/5;
+      border-radius: 0.5rem;
+      color: white;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: last baseline;
+      justify-content: left;
+  }
+  .about-info{
+      grid-column: 3/5;
+      margin-left: 50px;
+      /* background-color: green; */
+      color: white;
+      font-size: 1.8rem;
+      display: flex;
+      align-items: first baseline;
+      justify-content: center;
+  }
+  .project{
     min-height:18rem;
     width: 100%;
     /* background-color: green; */
@@ -202,5 +206,3 @@ ion-icon:hover{
     transition: 0.5s ease-in-out;
 
 }
-
-
