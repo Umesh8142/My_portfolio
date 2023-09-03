@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Niramit:wght@200;700&family=Pacifico&family=REM:wght@300;400&family=Sofia&family=Sofia+Sans+Condensed&display=swap');
-*{    margin: 0;
-     box-sizing: border-box;
-     font-family: 'Lilita One';
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Niramit:wght@200;700&family=Pacifico&family=REM:wght@300;400&family=Sofia&family=Sofia+Sans+Condensed&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lilita One";
+  padding: 0;
 }
 
 /* https://codepen.io/alvaromontoro/pen/...
@@ -16,194 +19,175 @@ https://freefrontend.com/css-typing-text/
 https://app.haikei.app/
 
 https://github.com/Rohanfizz/Acciojob-HTML_CSS*/
-.back{
-    height:200rem ;
-    background-image: url(wallpaper.jpg);
-    background-size: cover;
-    width: auto;
+.back {
+  background-image: url(wallpaper.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
 }
-.Skills{
-    color: white;
+.navbar {
+  position: sticky;
+  top: 0px;
+  height: 3.5rem;
+  width: 100%;
+  background-image: linear-gradient(to right, #335777 0%, #66cdd3 100%);
+  z-index: 100;
 }
-.navbar{
-    position: sticky;
-    top: 0;
-    height: 3.5rem;
-    width: 100vw;
-    background-image: linear-gradient(to right, #1a2e40 0%, #66cdd3 100%);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 99;
+.navSite {
+  min-width: 40%;
+  height: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.connect1{
-    min-width: 35rem;
-    height: 3.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.nav-button {
+  border: 2px solid white;
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+  padding: 2px 10px;
 }
-ion-icon{
-    margin-left: 60px;
-    font-size: 2.5rem;
-    color: white;  
+.nav-button:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
 }
-.navSite{
-    min-width: 40rem;
-    height: 3.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;  
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.nav-button{
-    border: 2px solid white;
-    border-radius: 0.5rem;
-    font-size: 1.5rem;
-    color: white;
-    margin: 2rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.about-grid {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 50%;
+  width: 30%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(3, 100px);
 }
-.nav-button:hover{
-    background-color: white;
-    color: black;
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
+.about-img {
+  grid-row: 2/-2;
+  height: 250px;
 }
-
-.about{
-  /* background-color: red;  */
-  /* background-image: url(layered-waves-haikei.png);  */
- height: 20rem;
- display: flex;
- align-items: center;
- justify-content: center;
+.umesh {
+  height: 100%;
+  border-radius: 10px;
+  border: 1.5px solid black;
+  box-shadow: rgba(1, 1, 1, 0.3) 0px 19px 38px,
+    rgba(80, 79, 79, 0.22) 0px 15px 12px;
 }
-.about-grid{
-    height: 18rem;
-    width:30rem;
-    /* background-color: black;   */
-    min-width: 20rem;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(4,rem);
-    grid-template-rows: 10rem 4rem;
+.about-name {
+  grid-row: 2/-2;
+  grid-column: 3/5;
+  color: white;
+  font-size: 30px;
 }
-.about-img{
-    margin-top: 1rem;
-    grid-row: 1/3;
-    height: 16rem;
-    /* background-color: yellow;  */
-    margin-left: 2px;
+.about-info {
+  grid-row: 3;
+  grid-column: 3/5;
+  color: white;
+  font-size: 30px;
 }
-.umesh{
-    height: 100%;
-    border-radius: 0.5rem;
-    border: 1.5px solid black;
-    box-shadow: rgba(1, 1, 1, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+.Skills {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
 }
-.about-name{
-    margin-left: 50px;
-    grid-column: 3/5;
-    border-radius: 0.5rem;
-    color: white;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: last baseline;
-    justify-content: left;
+#lang {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
 }
-.about-info{
-    grid-column: 3/5;
-    margin-left: 50px;
-    /* background-color: green; */
-    color: white;
-    font-size: 1.8rem;
-    display: flex;
-    align-items: first baseline;
-    justify-content: center;
+.project {
+  margin-top: 20px;
+  min-height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
-.project{
-    min-height:18rem;
-    width: 100%;
-    /* background-color: green; */
-    /* background-image: url(stacked-steps-haikei.png); */
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    padding: 1.5rem;
-    gap:1rem;
-    align-items: center;
-    justify-content: center;
-    
+.proj-head {
+  color: white;
+  font-size: 30px;
 }
-.proj-head{
-    color: white ;
-    font-size: 1.6rem;
+.proj-show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
-.proj-show{
-    /* background-color: red; */
-    height: 14rem;
-    min-width: calc(10*150px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.proj-item {
+  height: calc(10 * 12px);
+  width: calc(10 * 20px);
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: rgba(14, 14, 16, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  overflow: hidden;
+}
+.proj-item img {
+  height: 100%;
+  width: 100%;
+  border-radius: 2px;
+}
+.grow:hover {
+  transform: scale(1.1);
+  -webkit-transition: transform 0.5s ease-in-out;
+}
+.connect {
+  margin-top: 30px;
+  background-image: url(layered-waves-haikei.png);
+  background-size: cover;
+  height: 30%;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  gap: 20px;
+}
+.socials {
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+ion-icon {
+  font-size: 40px;
+  color: white;
+}
+ion-icon:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s ease-in-out;
+}
+@media only screen and (max-width: 768px) {
+  .proj-show {
     flex-wrap: wrap;
-    gap: 4rem;
-    overflow: auto;
-}
-.proj-item{
-    background-color: red;
-    height: calc(10*12px);
-    width: calc(10*20px);
-    border: 2px solid black;
-    border-radius: 0.5rem;
-    flex-shrink: 0;
-    box-shadow: rgba(14, 14, 16, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
-.proj-item img{
-    height: 100%;
+  }
+  #lang {
+    flex-wrap: wrap;
+    width: 2%;
+    align-items: center;
+    justify-content: center;
+  }
+  .back {
     width: 100%;
-    border-radius: 2px;  
+    background-size: cover;
+  }
 }
-.grow:hover{
-    transform: scale(1.1);
-    -webkit-transition: transform 0.5s ease-in-out;
-}
-.connect{
-    /* background-color: red; */
-    height: 15rem;
-    width: 100vw;
-    color: white;
-    /* background-image: linear-gradient(to right, #1a2e40 0%, #66cdd3 100%); */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.6rem;
-    gap: 2rem;
-
-}
-.socials{
-    /* background-color: green; */
-    display: flex;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-
-}
-.socials a ion-icon{
-    font-size: 4rem;
- 
-}
-ion-icon:hover{
-    background-color: white;
-    color: black;
-    transition: 0.5s ease-in-out;
-
-}
-
-
